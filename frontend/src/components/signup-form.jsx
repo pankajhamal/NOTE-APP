@@ -13,6 +13,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import { NavLink } from "react-router-dom"
 
 export function SignupForm({
   ...props
@@ -53,7 +54,8 @@ export function SignupForm({
               <Field>
                 <Button type="submit">Create Account</Button>
                 <FieldDescription className="px-6 text-center">
-                  Already have an account? <a href="#">Sign in</a>
+                  Already have an account?
+                  <NavLink to="/signin">Signin</NavLink>
                 </FieldDescription>
               </Field>
             </FieldGroup>
